@@ -1,0 +1,39 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { BsStars } from "react-icons/bs";
+import { PiFilePdfLight } from "react-icons/pi";
+
+const SideNavbar = () => {
+  return (
+    <div className='flex flex-col justify-between items-center bg-white h-screen shadow z-50 '>
+      <div className='w-full flex flex-col   items-center space-y-2'>
+        <div className='h-[100px] flex items-center'>
+          <span className='font-black text-[#0957F9] '>LOGO</span>
+        </div>
+        <Link to='/' className="p-4 py-2  rounded-xl block  focus:text-white focus:bg-[#0957F9] w-[90%] ">
+          <BsStars className='inline mr-2' />
+          Prompt Generation
+        </Link>
+        <Link to='/tutorial' className="p-4 py-2  rounded-xl block  focus:text-white focus:bg-[#0957F9] w-[90%] ">
+          {/* <Link to='/tutorial' className="p-4 py-2  rounded block  focus:text-white focus:bg-[#0957F9]"> */}
+          <PiFilePdfLight className='inline mr-2' />
+          My tutorials
+        </Link>
+      </div>
+      <div className='order-last flex flex-col justify-center items-center w-[80%] h-[180px] bg-[#0957F9] text-white rounded-3xl mb-4'>
+        <div className='p-1 bg-white rounded-full h-auto -mt-[40%]'>
+          <div className='bg-[#0957F9] h-50  rounded-full  shadow-xl p-1'><img src="fxemoji_rocket.png" alt="gg" /></div>
+        </div>
+        <span className='font-bold'>Upgrade Your Plan</span>
+        <span>Upgrdae your free plan </span>
+        <span>to KDBA Pro</span>
+        {/* <div className='p-1 rounded bg-white'> */}
+
+        <button className='bg-[#0957F9] rounded  outline-white '>Upgrade Plan</button>
+        {/* </div> */}
+      </div>
+    </div>
+  )
+}
+
+export default SideNavbar
