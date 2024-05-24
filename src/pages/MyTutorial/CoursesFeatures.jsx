@@ -8,10 +8,10 @@ const CoursesFeatures = () => {
         <div>
           <h1 className='text-2xl font-semibold mb-4'>Your AI Genrated New Platform Course</h1>
         </div>
-        <button className='bg-[#069d4758] rounded-2xl text-[#069D47]'>
-          <FaCloudUploadAlt className='w-8 h-8'/>
-          <span>
-            Public Totural
+        <button className='bg-[#069d4758] rounded-2xl text-[#069D47] flex w-[156px] h-[38px]'>
+          <FaCloudUploadAlt className='w-5 h-5 ml-5 mt-2 '/>
+          <span className='mt-2'>
+          Public Totural
           </span>
         </button>
       </div>
