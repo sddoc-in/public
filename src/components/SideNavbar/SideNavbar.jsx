@@ -15,9 +15,20 @@ const SideNavbar = () => {
           Prompt Generation
         </Link>
         <Link to='/tutorial' className="p-4 py-2  rounded-xl block  focus:text-white focus:bg-[#0957F9] w-[90%] ">
-          {/* <Link to='/tutorial' className="p-4 py-2  rounded block  focus:text-white focus:bg-[#0957F9]"> */}
           <PiFilePdfLight className='inline mr-2' />
           My tutorials
+        </Link>
+        <Link to='/Generate' className="p-4 py-2  rounded-xl block  focus:text-white focus:bg-[#0957F9] w-[90%] ">
+       
+          Page 1
+        </Link>
+        <Link to='/tutorial1' className="p-4 py-2  rounded-xl block  focus:text-white focus:bg-[#0957F9] w-[90%] ">
+         
+          Page 2
+        </Link>
+        <Link to='/tutorial2' className="p-4 py-2  rounded-xl block  focus:text-white focus:bg-[#0957F9] w-[90%] ">
+         
+          Page 3
         </Link>
       </div>
       <div className='order-last flex flex-col justify-center items-center w-[80%] h-[180px] bg-[#0957F9] text-white rounded-3xl mb-4'>
